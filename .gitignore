@@ -1,0 +1,4 @@
+/nginx/conf.d/*
+!/nginx/conf.d/copyme.com/
+
+/nginx/ssl/*
