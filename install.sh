@@ -9,7 +9,7 @@ DOCKER_SOURCE_LIST="/etc/apt/sources.list.d/docker.list"
 
 
 # Install necessary packages
-apt install apt-transport-https ca-certificates curl software-properties-common git -y
+apt install apt-transport-https ca-certificates curl software-properties-common openssl git -y
 
 # Add Docker GPG key
 curl -fsSL $DOCKER_GPG_URL | sudo gpg --dearmor -o $DOCKER_KEYRING_PATH
@@ -19,7 +19,6 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=$DOCKER_KEYRING_PATH] $DO
 
 # Update package list and install Docker
 apt update -y
-apt install openssl -y
 apt install docker-ce -y
 
 # Verify Docker installation
