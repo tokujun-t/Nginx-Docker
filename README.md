@@ -9,6 +9,8 @@ wget https://raw.githubusercontent.com/tokujun-t/Nginx-Docker/refs/heads/main/in
 sudo sh install.sh
 ```
 
+Working path at `/etc/nginx`
+
 In the development environment, you can test your orchestration by simply executing `docker compose up`.
 
 # Some tips
