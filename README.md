@@ -5,6 +5,7 @@ Start by orchestrating your web application by editing nginx.conf.
 Then, in a production environment you can use the script to install the environment:
 
 ```shell
+wget https://raw.githubusercontent.com/tokujun-t/Nginx-Docker/refs/heads/main/install.sh
 sudo sh install.sh
 ```
 
