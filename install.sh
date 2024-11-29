@@ -21,6 +21,9 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=$DOCKER_KEYRING_PATH] $DO
 apt update -y
 apt install docker-ce -y
 
+# install htpasswd
+sudo apt install apache2-utils
+
 # Verify Docker installation
 sudo docker --version
 

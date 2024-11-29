@@ -22,3 +22,13 @@ openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
     -out /etc/nginx/ssl/default.crt \
     -subj "/C=US/ST=Test/L=Test/O=Test/OU=Test/CN=default"
 ```
+
+### htpasswd 
+
+```shell
+# Run on HOST
+htpasswd -c ./nginx/.htpasswd your_username
+
+chown nginx:nginx ./nginx/.htpasswd
+chmod 640 ./nginx/.htpasswd
+```
